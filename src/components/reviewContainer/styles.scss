@@ -1,0 +1,102 @@
+@import 'assets/scss/main.scss';
+
+.review-container {
+  width: 100%;
+  padding: 17px 16px 17px 15px;
+  float: left;
+  position: relative;
+  background: #f6f8fa;
+  display: block;
+}
+
+.content1 {
+  width: 100%;
+  padding: 24px 16px 17px 18px;
+  background-color: white;
+  display: block;
+ }
+
+.titles {
+  font-size: $fnt18;
+  font-family: 'Bold Proxima Nova';
+   letter-spacing: 0;
+   color: red;
+}
+
+.img-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.comment {
+  padding-top: 11px;
+  display: flow-root;
+}
+
+.avatar-input {
+  display: flex;
+  position: relative;
+}
+
+.input-comment {
+  width: 100%;
+  height: 108px !important;
+  overflow: auto;
+}
+
+.raty-button {
+  display: flex;
+  float: right;
+  padding-top: 10px;
+}
+
+.forget-text {
+  padding: 12px;
+}
+
+.btn-comment {
+  box-shadow: 0px 3px 6px #0000000D;
+border: 2px solid #03A9F480;
+border-radius: 4px;
+  background-color: #03A9F433 ;
+  color: $gradnt_dark_blue2;
+  margin-left: 5px;
+  opacity: 0.4;
+  width: 144px;
+height: 42px;
+}
+
+.emoji-content {
+  position: absolute;
+  right: 4px;
+  top: 70px;
+}
+
+.img-emoji {
+  cursor: pointer;
+}
+
+.emojis {
+  width: 220px;
+  height: 295px;
+  position: absolute;
+  border: 1px solid #eeeeee;
+  right: -5px;
+  top: 22px;
+  z-index: 100;
+  padding: 16px 17px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #242b2e;
+  ;
+}
+
+.posted {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+}

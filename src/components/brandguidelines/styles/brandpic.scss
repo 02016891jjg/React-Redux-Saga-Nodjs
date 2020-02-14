@@ -1,0 +1,71 @@
+@import 'assets/scss/main.scss';
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 0px;
+  // background-color: #2196F3;
+  padding: 0px;
+  height: 1000px;
+}
+
+.grid-container>div {
+  // background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  // padding: 20px 0;
+  font-size: 30px;
+  background-position: right;
+  background-size: cover;
+}
+
+.pic3 {
+  grid-area: 1 / 1 / span 2 / span 1;
+
+}
+
+.pic3 img {
+  height: 100%;
+}
+
+.pic1 img,
+.pic2 img {
+  width: 100%;
+  height: 100%;
+}
+.pic3{
+  background: transparent url('../../../assets/images/mark.svg') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.pic2{
+  background: transparent url('../../../assets/images/Pixel4.0.svg') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.pic1{
+  background: transparent url('../../../assets/images/tech-devices-foodini.svg') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .grid-container{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+  .pic3 {
+    grid-area: 1 / 1 / span 1 / span 2;
+    background-position: bottom!important;
+  }
+
+
+}
+@media (max-width: 425px) {
+  .grid-container{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .pic3 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-position: bottom!important;
+  }
+
+
+}

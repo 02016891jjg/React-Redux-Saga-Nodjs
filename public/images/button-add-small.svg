@@ -1,0 +1,4 @@
+<svg id="button-add" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <circle id="base" cx="11.5" cy="11.5" r="11.5" fill="#03a9f4"/>
+  <path id="icon-add" d="M5466.57,14637.069v-4.644h-4.644a.928.928,0,0,1,0-1.855h4.644v-4.64a.929.929,0,1,1,1.859,0v4.64h4.64a.928.928,0,1,1,0,1.855h-4.64v4.644a.929.929,0,0,1-1.859,0Z" transform="translate(-5456 -14620)" fill="#fff"/>
+</svg>

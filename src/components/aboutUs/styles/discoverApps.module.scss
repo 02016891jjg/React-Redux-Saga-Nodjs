@@ -1,0 +1,221 @@
+@import 'assets/scss/main.scss';
+
+.disinner {
+  margin: auto;
+}
+
+.dis_text_container {
+  background: white;
+
+  .dis_text_inner {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+.our_apps_outer {
+  background: white;
+}
+
+.text {
+  //display: inline-block;
+  //width: 30%;
+  //min-width: 315px;
+
+  p {
+    //margin: 82px 0 18px 0;
+
+    padding: 0px 0 25px 0;
+    width: 70%;
+    font-size: 78px;
+    color: black;
+    line-height: 1;
+    letter-spacing: -1.56px;
+    font-family: 'ExtraBold Proxima Nova';
+  }
+
+  .description {
+    width: 40%;
+    font-size: $fnt22;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    letter-spacing: 0;
+    color: #242B2ECC;;
+    line-height: 1.2;
+    opacity: 1;
+    font-family: 'Proxima Nova';
+  }
+}
+
+.discover_apps {
+  //background: $white_background;
+  color: $transparent_dark_grey;
+
+  .text {
+    padding: 56px 79px 51px 79px;
+  }
+
+  .our_apps_outer {}
+
+  .our_apps {
+    width: 100%;
+    background: #eef2f6;
+
+    .our_apps_inner1 {
+      max-width: 1440px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+
+      .app:nth-child(odd) {
+        background-color: $primary-color;
+
+        .description {
+          width: 224px;
+        }
+      }
+
+      .app:nth-child(even) {
+        .description {
+          max-width: 370px;
+        }
+      }
+    }
+
+    .our_apps_inner2 {
+      max-width: 1440px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+
+      .app:nth-child(even) {
+        background-color: $primary-color;
+
+        .description {
+          max-width: 370px;
+        }
+      }
+
+      .app:nth-child(odd) {
+        .description {
+          width: 224px;
+        }
+      }
+    }
+
+
+    .app {
+      height: 288px;
+      width: 33%;
+      display: inline-block;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      align-items: center;
+      color: #242B2E;
+
+      .app_name {
+        margin-top: 21px;
+        //font-weight: bolder;
+        font-size: $fnt24;
+        font-family: 'ExtraBold Proxima Nova';
+      }
+
+      .app_cont {
+        width: 114px;
+        height: 114px;
+        box-shadow: 0px 4px 14px $grey_shadow2;
+        border-radius: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        color: $white_background;
+
+        p {
+          font-size: $fnt12;
+          margin-top: 9px;
+        }
+      }
+
+      .description {
+        text-align: center;
+        margin: 0;
+        font-family: 'Proxima Nova';
+        font-size: 16px;
+
+      }
+    }
+
+    .vs1 .app_cont {
+      background: transparent linear-gradient(127deg, #33cff5 0%, #352dad 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .explore {
+      background: white;
+
+      .app_cont {
+        background: transparent linear-gradient(311deg, #2c4df9 0%, #7df4d4 100%) 0% 0% no-repeat padding-box;
+      }
+
+    }
+
+    .indiegogo .app_cont {
+      background: transparent linear-gradient(134deg, #d39beb 0%, #ea1579 100%) 0% 0% no-repeat padding-box;
+
+      img,
+      p {
+        margin-top: -20px;
+      }
+    }
+
+    .vs2 .app_cont {
+      background: transparent linear-gradient(127deg, $gradient_purple1 0%, $gradient_purple2 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .ces .app_cont {
+      background: transparent linear-gradient(134deg, #f7cb70 0%, #ef2c00 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .kickstarter .app_cont {
+      background: transparent linear-gradient(324deg, #2bd9de 0%, #2bde73 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  .app {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .text {
+    h1 {
+      font-size: 46px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .app {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .text {
+    padding: 56px 20px 51px !important;
+
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+  .description {
+    padding: 0 20px;
+    font-size: 18px !important;
+  }
+}

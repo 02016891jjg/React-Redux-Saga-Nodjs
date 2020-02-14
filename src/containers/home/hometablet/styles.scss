@@ -1,0 +1,14 @@
+@import 'assets/scss/main.scss';
+
+.t_wrapper {
+  max-width: 1072px;
+  height: 100%;
+  margin: 0 auto;
+
+  .t_container {
+    max-width: 784px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+}

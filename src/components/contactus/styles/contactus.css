@@ -1,0 +1,18 @@
+#root {
+  height: 100%;
+}
+
+.map_part {
+  width: 120px;
+  display: inline-flex;
+}
+
+.image_contact_maker {
+  width: 30px;
+  height: 48px;
+}
+
+.area_title {
+  margin-left: 10px;
+  color: red;
+}

@@ -1,0 +1,56 @@
+@import 'assets/scss/main.scss';
+
+.brand_mark_part_inner {
+  background: white;
+}
+
+.brand_mark_part {
+
+  //padding: 67px 79px 67px 79px;
+  padding: 75px 79px 57px 79px;
+
+  max-width: 1440px;
+  margin: auto;
+
+  .brand_mark_title {
+    display: inline-block;
+    //width: 50%;
+
+    h1 {
+      font-weight: bolder;
+      color: black; // font-size: $fnt78;
+      font-size: 78px;
+      letter-spacing: -1.56px;
+      font-family: 'ExtraBold Proxima Nova';
+      line-height: 1;
+      padding-bottom: 23px;
+    }
+
+    .brand_mark_description {
+      width: 92%;
+      max-width: 679px;
+      font-size: 22px;
+      color: #242B2ECC;
+      border-left: 3px solid #03a9f4;
+      padding-left: 17px;
+      letter-spacing: 0;
+      line-height: 1.2;
+      opacity: 1;
+      font-family: 'Proxima Nova';
+    }
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  .brand_mark_part {
+    padding: 57px 20px 23px 20px;
+
+    .brand_mark_title {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+}

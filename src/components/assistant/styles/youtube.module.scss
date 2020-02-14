@@ -1,0 +1,455 @@
+@import 'assets/scss/main.scss';
+
+.text {
+   
+  margin: 0 auto;
+  max-width: 1440px;
+  
+  p {
+    margin: 0px;
+    width: 60%;
+    font-size: 78px;
+    color: white;
+    font-family: 'ExtraBold Proxima Nova';
+    letter-spacing: -1.56px;
+    line-height: 1;
+  }
+
+  .description {
+    width: 43%;
+    font-size: $fnt22;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    font-family: 'Proxima Nova';
+    margin-top: 30px;
+  }
+}
+
+
+.photos {
+  position: relative;
+  margin-left: 100px;
+  .cards,
+  .background {
+    //width: 100%;
+
+    width: 843px;
+    height: 487px;
+    margin-top: 45px;
+
+  }
+
+ 
+
+  .mocup,
+  .photo {
+
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.best_phone_part {
+  background: linear-gradient(180deg, #D32F2F 0%, #D32F2FCC 100%);
+  height: 703px;
+  color: $white_background;
+  width: 100%;
+  position: relative;
+  opacity:1;
+  display:inline-block;
+  .watch_text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 178px;
+
+      .span_text{
+        border-bottom: 1px solid white;
+      }
+
+  }
+   .btn_inner{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 92px;
+     .span_text{
+      margin-left: 10px;
+      border-bottom: 1px solid #FFFFFF;
+
+     }
+    .button{
+      width: 100px;
+      height: 100px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+      opacity: 1;
+      border-radius: 50%;
+      position: relative;
+  
+      .tri_button{
+        content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -14px 0 0 -5px;
+      border-left: 19px solid #000;
+      border-top: 15px solid transparent;
+      border-bottom: 16px solid transparent;
+      transition: border-color 300ms;
+      border-radius: 7px;
+      }
+    }
+
+  
+  
+   }
+  
+  //display: flex;
+  //min-width: 1100px;
+  //display: grid;
+  //grid-template-columns: calc(100% - 780px) 780px;
+  .best_inner {
+    margin-top: 50px;
+  }
+
+  .text {
+    padding-left: 79px;
+
+    h1 {
+      color: $white_background;
+    }
+
+    .description {
+      border-left: 3px solid $white_background;
+    }
+
+    .input {
+      position: relative;
+      width: fit-content;
+
+      .chrome_logo_size{
+          position: absolute;
+          top: 94px;
+          margin-right: 10px;
+          width: 32px;
+          height: 32px;
+      }
+
+      input {
+        margin-top: 64px;
+        //min-width: 475px;
+        width: 475px;
+        height: 92px;
+        border: 1px solid $grey_border;
+        border-radius: 8px;
+        padding: 0 0px 0 50px;
+        color: $dark_grey;
+        font-family: 'SemiBold Proxima Nova';
+        font-size: 18px;
+        color: #C3C3C3;
+
+        &::placeholder {
+          color: #C3C3C3;
+        }
+
+      }
+
+      .button_try_now {
+        font-family: 'SemiBold Proxima Nova';
+        font-size: 18px;
+
+      }
+
+
+
+      .for_example {
+        margin-top: 14px;
+        font-size: $fnt14;
+        //font-family: lighter;
+        //font-family: "ProximaNova-Regular", Regular;
+        font-family: 'Proxima Nova';
+
+        span {
+          color: $transparent_white_text;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 507px) {
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+
+    input {
+      margin-top: 64px;
+      max-width: 100% !important;
+      //min-width: 475px;
+      //width: 475px;
+      height: 92px;
+      border: 1px solid $grey_border;
+      border-radius: 8px;
+      padding: 0 28px 0 28px !important;
+      color: $dark_grey;
+
+    }
+
+    .button_try_now {
+      width: 100%;
+      height: 84px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      opacity: 1;
+      cursor: pointer;
+      font-size: $fnt18;
+      top: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 5px;
+      margin-top: 38px;
+
+    }
+
+    .for_example {
+      margin-top: 14px;
+      font-size: $fnt14;
+      font-family: lighter;
+      font-family: "ProximaNova-Regular", Regular;
+
+      span {
+        color: $transparent_white_text;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    padding: 0 20px !important;
+
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+  .photos {
+    overflow-x: hidden;
+  }
+
+}
+
+@media (max-width: 1339px) {
+  .best_phone_part {
+    // background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+    background: transparent linear-gradient(180deg, #D32F2F 0%, #D32F2FCC 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 96px 0 86px 0px;
+    color: $white_background;
+    width: 100%;
+
+    //display: flex;
+    //min-width: 1100px;
+    //display: grid;
+    //grid-template-columns: calc(100% - 780px) 780px;
+    .best_inner {
+      //max-width: 1440px;
+      // max-width: 100%;
+      // margin: auto;
+      // display: grid;
+      // grid-template-columns: 50% 50%;
+
+    }
+
+    .text {
+      padding-left: 79px;
+      //width: 100%;
+
+      h1 {
+        color: $white_background;
+      }
+
+      .description {
+        border-left: 3px solid $white_background;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .best_phone_part {   
+    // background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+    background: transparent linear-gradient(180deg, #D32F2F 0%, #D32F2FCC 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 100%;
+    padding: 96px 0 86px 0px;
+    color: $white_background;
+
+    //display: flex;
+    //min-width: 1100px;
+    //display: grid;
+    //grid-template-columns: calc(100% - 780px) 780px;
+    .best_inner {
+      //max-width: 1440px;
+      // max-width: 100%;
+      // margin: auto;
+      // display: grid;
+      // //grid-template-columns: calc(100% - 780px) 780px;
+      // grid-template-columns: 100%;
+      // grid-template-rows: auto 500px;
+
+    }
+
+    .text {
+      padding: 0 79px;
+      //width: 100%;
+
+      h1 {
+        color: $white_background;
+      }
+
+      .description {
+        border-left: 3px solid $white_background;
+      }
+
+
+    }
+
+  }
+}
+
+@media (max-width: 566px) {
+  .text {
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+}
+
+
+@media (min-width: 508px) {
+  .input {
+    position: relative;
+    width: fit-content;
+
+    input {
+      margin-top: 64px;
+      max-width: 475px;
+      //min-width: 475px;
+      //width: 475px;
+      height: 92px;
+      border: 1px solid $grey_border;
+      border-radius: 8px;
+      padding: 0 200px 0 28px;
+      color: $dark_grey;
+
+    }
+
+    .button_try_now {
+      width: 172px;
+      height: 84px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      opacity: 1;
+      cursor: pointer;
+      position: absolute;
+      font-size: $fnt18;
+      top: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 5px;
+      //margin-top: 38px;
+
+    }
+
+    .for_example {
+      margin-top: 14px;
+      font-size: $fnt14;
+      font-family: lighter;
+      font-family: "ProximaNova-Regular", Regular;
+
+      span {
+        color: $transparent_white_text;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .best_phone_part {
+    padding: 48px 0 86px 0px !important;
+    width: 100%;
+  }
+
+  .description {
+    font-size: 18px !important;
+  }
+}
+
+.image_phone_youtube{
+  background-image: url(/images/video-generation.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.video_play1 {
+  border: none!important;
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 50%!important;
+  display: flex;
+  align-items: center!important;
+  justify-content: center!important;
+  transform: translateY(60%);
+  background: white!important;
+  position: relative;
+  z-index: 100;
+  &::before{
+    // position: relative!important;
+    
+    color: rgba(36, 43, 46, 1);
+    opacity: 1;
+    font-size: 45px;
+    transform: translate(2px, 27px);
+  }
+  
+}
+.video_play2 {
+  border: none!important;
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 50%!important;
+  display: flex;
+  align-items: center!important;
+  justify-content: center!important;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  background: white!important;
+  position: absolute;
+  outline: none!important;
+  z-index: 100;
+  &::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left: 15px solid black;
+    transform: translate(4px, 2px);
+  }
+  
+}
+

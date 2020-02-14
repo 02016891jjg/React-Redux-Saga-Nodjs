@@ -1,0 +1,18 @@
+.ui.search .prompt {
+
+    border: 0px solid #f00;
+    height: 40px;
+    width: auto;
+    background: #EEF2F680 0% 0% no-repeat padding-box;
+    border: 1px solid #DEE5EC;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.ui.input>input:focus {
+    background: #e9eef2;
+}
+
+.ui.input {
+    width: 98%;
+}

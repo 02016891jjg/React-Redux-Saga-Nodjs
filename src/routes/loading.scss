@@ -1,0 +1,100 @@
+$primary-color: #4285F4;
+$scale: 3;
+$squareSize: 100px;
+$cornerSize: ceil($squareSize / $scale);
+$cornerPosition: ceil($cornerSize / $scale);
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+ 
+
+
+@keyframes dyinglight{
+    15%  {transform: scale(1.6)}
+    50%  {transform: rotate(-89deg)}
+    100% {transform: rotate(-90deg)}
+}
+  
+  
+.t_dl{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+  
+}
+ 
+.t_dl__square{
+    display: block;
+    width: $squareSize;
+    height: $squareSize;
+    background-image: url(/images/t_logo.png);
+    background-size: cover;
+}
+  
+
+.t_dl__container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: 50% 50% 0;
+    animation: dyinglight 1s ease infinite;
+    backface-visibility: hidden;
+}
+  
+
+.t_dl__corner--top:before,
+.t_dl__corner--top:after,
+.t_dl__corner--bottom:before,
+.t_dl__corner--bottom:after{
+    position: absolute;
+    width: $cornerSize;
+    height: $cornerSize;
+    color: $primary-color;
+    content: '';
+}
+ 
+
+.t_dl__corner--top{
+    &:before{
+        border-left: 1px solid;
+        border-top: 1px solid;
+        top: -$cornerPosition;
+        left: -$cornerPosition;
+    }
+   
+  &:after{
+    border-right: 1px solid;
+    border-top: 1px solid;
+    top: -$cornerPosition;
+    right: -$cornerPosition;
+}
+  }
+  
+ 
+
+.t_dl__corner--bottom{
+    &:before{
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        bottom: -$cornerPosition;
+        left: -$cornerPosition;
+    }
+    &:after{
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        bottom: -$cornerPosition;
+        right: -$cornerPosition;
+    }
+   
+    
+}
+ 
+ 

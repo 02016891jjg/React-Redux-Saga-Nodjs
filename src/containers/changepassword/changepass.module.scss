@@ -1,0 +1,284 @@
+@import 'assets/scss/main.scss';
+.change_password_header{
+  position: fixed;
+  z-index: 1;
+  background-color: #eef2f6;
+}
+.main_wrapper{
+  width: 100%;
+  float: left;
+  padding-top: 76px;
+  margin-top: 80px;
+}
+.active_border{
+  background: #FFFFFF 0% 0% no-repeat padding-box !important;
+  border: 1px solid #242B2ECC !important;
+}
+.error_msg{
+  padding: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  /* color: red !important; */
+  font-family: "ProximaNova-Regular" !important;
+  font-size: 10px !important;
+  text-align: left;
+  padding-top: 7px !important;
+  letter-spacing: 0 !important;
+  color: #DB3236 !important;
+  opacity: 1 !important;
+  line-height: 1;
+  text-align: left !important;
+  height: 0!important;
+}
+.forget_box{
+  height: auto!important;
+}
+.forget_button {
+  text-align: center;
+  width: 100%;
+  .forget{
+    width: 188px;
+    height: 42px;
+    background: #03A9F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 4px;
+    opacity: 1;
+    font-family: 'SemiBold Proxima Nova';
+    font-size: 14px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+.error_msg{
+  color: red!important;
+}
+.error_border{
+  background: #DB32360D 0% 0% no-repeat padding-box !important;
+  border: 1px solid #DB3236 !important;
+  color: #DB3236 !important;
+}
+
+.border_line{
+  width: 100%;
+  height: 0px;
+  border: 1px solid #F2F5F7;
+  opacity: 1;
+  margin: 24.5px 0  34.5px;
+}
+
+.login_box {
+  //width: 40%;
+  width: 620px;
+  height: 668px;
+  //margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 36px 20px 44px 20px;
+  background-color: #fff;
+  max-width: 100%;
+  img {
+    //padding: 20px;
+    margin-bottom: 35px;
+  }
+  p {
+    width: 274px;
+    height: 46px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'ProximaNova-Regular';
+    margin-bottom: 39px;
+  }
+  .form_group {
+    text-align: left;
+    //padding: 20px;
+    label {
+      margin:0 0 10px;
+      line-height: 1;
+      font-family: 'SemiBold Proxima Nova';
+      font-size: 12px;
+    }
+    .email_password{
+      margin: 0 auto;
+    }
+    .input_email{
+      margin-bottom: 26px;
+      input{
+        width: 400px;
+        height: 44px;
+        background: #EEF2F6 0% 0% no-repeat padding-box;
+        border: 1px solid #DEE5EC;
+        border-radius: 8px;
+        opacity: 1;
+        font-family: 'Proxima Nova';
+        &::placeholder {
+          color: #91A8BF;
+        }
+        &:focus{
+          outline: none!important;
+          -webkit-box-shadow: none!important;
+          -moz-box-shadow:  none!important;
+          box-shadow:  none!important;
+          outline-offset: 0px!important;
+        }
+        &:hover{
+          border: 1px solid #91A8BF;
+        }
+
+        &:-internal-autofill-selected {
+          background-color: #EEF2F6  !important;
+          background-image: none !important;
+          color: rgb(0, 0, 0) !important;
+        }
+      }
+    }
+    .forget_label{
+      margin: 15px 0 21px;
+      cursor: pointer;
+    }
+  }
+  .input_password {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width: 400px;
+    max-width: 100%;
+    input{
+      font-family: 'Proxima Nova';
+      width: 100%;
+      height: 44px;
+      background: #EEF2F6 0% 0% no-repeat padding-box;
+      border: 1px solid #DEE5EC;
+      border-radius: 8px;
+      opacity: 1;
+      &::placeholder {
+        color: #91A8BF;
+      }
+      &:focus{
+        outline: none!important;
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow:  none!important;
+        box-shadow:  none!important;
+      }
+      &:hover{
+        border: 1px solid #91A8BF;
+      }
+    }
+    .eye_icon {
+      position: absolute;
+      display: flex;
+      bottom: 2px;
+      right: 7px;
+      color: #647688;
+      justify-content: center;
+      align-items: center;
+      width: 22px;
+      height: 44px;
+      cursor: pointer;
+      i{
+        width: 20px;
+        height: 12px;
+        font-size: 18px;
+      }
+
+    }
+    .forget_label {
+      text-align: right;
+      width: 100%;
+      letter-spacing: 0;
+      color: #242B2E;
+      opacity: 1;
+      font-family: 'SemiBold Proxima Nova';
+      font-size: 14px;
+    }
+    .login_button {
+      text-align: center;
+      width: 100%;
+      .login{
+        width: 188px;
+        height: 42px;
+        background: #03A9F4 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #0000000D;
+        border-radius: 4px;
+        opacity: 1;
+        font-family: 'SemiBold Proxima Nova';
+        font-size: 14px;
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        cursor: pointer;
+      }
+    }
+  }
+  .button_group {
+    //padding-top: 34.5px;
+    .button_group_inner{
+      padding: 0 89.5px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .social_button{
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 196px;
+      height: 42px;
+      position: relative;
+      box-shadow: 0px 3px 6px #0000000D;
+      border-radius: 4px;
+      opacity: 1;
+      span {
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+        float: left;
+        position: absolute;
+        left: 10px;
+      }
+      font-size: 14px;
+      font-family: "ProximaNova-Regular";
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .btn_fb{
+      background: #3D5A96 0% 0% no-repeat padding-box;
+    }
+    .btn_tw{
+      background: #2AA3EF 0% 0% no-repeat padding-box;
+    }
+    .btn_gg{
+      background: #DB3236 0% 0% no-repeat padding-box;
+    }
+    .btn_dark {
+      background-color: black;
+
+    }
+
+    //button {
+    //  //margin: 5px;
+    //  //width: 47%;
+    //  font-size: 15px;
+    //  margin-bottom: 10px;
+    //  width: 196px;
+    //  height: 42px;
+    //
+    //  span {
+    //    float: left;
+    //  }
+    //}
+  }
+}
+

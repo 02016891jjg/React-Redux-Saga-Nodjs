@@ -1,0 +1,340 @@
+@import 'assets/scss/main.scss';
+
+.text {
+
+
+  p {
+    margin: 0px 0 18px 0;
+    max-width: 100%;
+    max-width: 100%;
+    font-size: 78px;
+    color: white;
+    line-height: 1;
+    letter-spacing: -1.56px;
+    font-family: 'ExtraBold Proxima Nova';
+  }
+
+  .description {
+  
+    width: 80%;
+    font-size: $fnt22;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    line-height: 1.2;
+    opacity: 1;
+    font-family: 'Proxima Nova';
+
+  }
+
+}
+
+.photos {
+
+  position: relative;
+
+  .cards,
+  .background {
+    //width: 100%;
+
+    width: 843px;
+    height: 487px;
+    margin-top: 45px;
+
+  }
+
+  .mocup,
+  .photo {
+
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.best_phone_part {
+  background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+  padding: 96px 0 86px 0px;
+  color: $white_background;
+
+  //display: flex;
+  //min-width: 1100px;
+  //display: grid;
+  //grid-template-columns: calc(100% - 780px) 780px;
+  .best_inner {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: calc(100% - 613px) 780px;
+  }
+
+  .text {
+
+    padding-left: 79px;
+
+    h1 {
+      color: $white_background;
+    }
+
+    .description {
+      border-left: 3px solid $white_background;
+    }
+
+    .input {
+      position: relative;
+      width: fit-content;
+
+      input {
+        margin-top: 64px;
+        max-width: 475px;
+        //min-width: 475px;
+        //width: 475px;
+        height: 92px;
+        border: 1px solid $grey_border;
+        border-radius: 8px;
+        padding: 0 200px 0 28px;
+        color: $dark_grey;
+        font-family: 'SemiBold Proxima Nova';
+        font-size: 18px;
+        color: #C3C3C3;
+
+        &::placeholder {
+          color: #C3C3C3;
+        }
+
+      }
+
+      .button_try_now {
+        font-family: 'SemiBold Proxima Nova';
+        font-size: 18px;
+
+      }
+
+
+
+      .for_example {
+        margin-top: 14px;
+        font-size: $fnt14;
+        //font-family: lighter;
+        //font-family: "ProximaNova-Regular", Regular;
+        font-family: 'Proxima Nova';
+
+        span {
+          color: $transparent_white_text;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 507px) {
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+
+    input {
+      margin-top: 64px;
+      max-width: 100% !important;
+      //min-width: 475px;
+      //width: 475px;
+      height: 92px;
+      border: 1px solid $grey_border;
+      border-radius: 8px;
+      padding: 0 28px 0 28px !important;
+      color: $dark_grey;
+
+    }
+
+    .button_try_now {
+      width: 100%;
+      height: 84px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      opacity: 1;
+      cursor: pointer;
+      font-size: $fnt18;
+      top: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 5px;
+      margin-top: 38px;
+
+    }
+
+    .for_example {
+      margin-top: 14px;
+      font-size: $fnt14;
+      font-family: lighter;
+      font-family: "ProximaNova-Regular", Regular;
+
+      span {
+        color: $transparent_white_text;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .text {
+    padding: 0 20px !important;
+
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+  .photos {
+    overflow-x: hidden;
+  }
+
+}
+
+@media (max-width: 1339px) {
+  .best_phone_part {
+    background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+    padding: 96px 0 86px 0px;
+    color: $white_background;
+
+    //display: flex;
+    //min-width: 1100px;
+    //display: grid;
+    //grid-template-columns: calc(100% - 780px) 780px;
+    .best_inner {
+      //max-width: 1440px;
+      max-width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+    }
+
+    .text {
+      padding-left: 79px;
+      //width: 100%;
+
+      h1 {
+        color: $white_background;
+      }
+
+      .description {
+        border-left: 3px solid $white_background;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .best_phone_part {
+    background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+    padding: 96px 0 86px 0px;
+    color: $white_background;
+
+    //display: flex;
+    //min-width: 1100px;
+    //display: grid;
+    //grid-template-columns: calc(100% - 780px) 780px;
+    .best_inner {
+      //max-width: 1440px;
+      max-width: 100%;
+      margin: auto;
+      display: grid;
+      //grid-template-columns: calc(100% - 780px) 780px;
+      grid-template-columns: 100%;
+      grid-template-rows: auto 500px;
+
+    }
+
+    .text {
+      padding: 0 79px;
+      //width: 100%;
+
+      h1 {
+        color: $white_background;
+      }
+
+      .description {
+        border-left: 3px solid $white_background;
+      }
+
+
+    }
+
+  }
+}
+
+@media (max-width: 566px) {
+  .text {
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+}
+
+
+@media (min-width: 508px) {
+  .input {
+    position: relative;
+    width: fit-content;
+
+    input {
+      margin-top: 64px;
+      max-width: 475px;
+      //min-width: 475px;
+      //width: 475px;
+      height: 92px;
+      border: 1px solid $grey_border;
+      border-radius: 8px;
+      padding: 0 200px 0 28px;
+      color: $dark_grey;
+
+    }
+
+    .button_try_now {
+      width: 172px;
+      height: 84px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      opacity: 1;
+      cursor: pointer;
+      position: absolute;
+      font-size: $fnt18;
+      top: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 5px;
+      //margin-top: 38px;
+
+    }
+
+    .for_example {
+      margin-top: 14px;
+      font-size: $fnt14;
+      font-family: lighter;
+      font-family: "ProximaNova-Regular", Regular;
+
+      span {
+        color: $transparent_white_text;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .best_phone_part {
+    padding: 48px 0 86px 0px !important;
+  }
+
+  .description {
+    font-size: 18px !important;
+  }
+}

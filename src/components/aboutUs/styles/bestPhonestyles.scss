@@ -1,0 +1,14 @@
+.object_phone{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  .object_phone{
+    width: auto;
+  }
+}

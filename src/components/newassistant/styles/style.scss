@@ -1,0 +1,25 @@
+@import 'assets/scss/main.scss';
+
+
+body{
+
+    width: 100%;
+    height: 100%;
+
+    #root{
+        width: 100%;
+        height: 100%;
+
+        .assitant{
+            width: 100%;
+            height: 100%;
+
+            .assitant_part{
+               max-width: 1440px;
+               margin: 0 auto;
+               padding-left: 79px;
+               padding-right: 79px;
+            }
+        }
+    }
+}

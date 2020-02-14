@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="button-remove" transform="translate(-434 -848)">
+    <rect id="base" width="15" height="15" rx="7.5" transform="translate(434 848)" fill="rgba(36,43,46,0.8)"/>
+    <line id="Line_4" data-name="Line 4" x2="6" transform="translate(438.5 855.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,236 @@
+@import 'assets/scss/main.scss';
+
+.inner {
+  padding: 20px 0 52px 0px;
+  margin: auto;
+}
+
+.text {
+
+  padding-left: 79px;
+
+  p {
+    max-width: 100%;
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    font-size: 78px;
+    font-family: 'ExtraBold Proxima Nova';
+    letter-spacing: -1.56px;
+    color: rgba(36, 43, 46, 1);
+    opacity: 1;
+  }
+
+  .description {
+    display: inline-block;
+    width: 100%;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+   
+
+    .description_p{
+      font-size: 22px;
+      font-family: 'Medium Proxima Nova';
+      color: #242B2ECC;
+      opacity: 1;
+      letter-spacing: 0;
+      margin: 0;
+    }
+  }
+}
+
+.photos {
+  //width: 60%;
+  position: relative;
+  overflow: hidden;
+  //padding-right: 103px;
+  //min-width: 680px;
+  width: 1500px;
+  max-width: 1500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/whatisphoto.png');
+
+  .cards,
+  .background {
+    height: 100%;
+  }
+
+  .mocup,
+  .photo {
+    position: absolute;
+    bottom: 0;
+    right: -148px;
+    width: 116%;
+  }
+}
+
+.what_is_part {
+  display: flex;
+  color: $transparent_dark_grey;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 576px calc(100% - 576px);
+  overflow-x: hidden;
+
+  .text_tag {
+    margin-top: 55px;
+    font-size: 22px;
+    font-family: 'Proxima Nova';
+    letter-spacing: 0;
+    line-height: 1.2;
+    color: rgba(36, 43, 46, 0.8);
+    width: 100%;
+    letter-spacing: 0;
+    opacity: 1;
+
+    span {
+      font-size: $fnt24;
+      font-style: italic;
+      letter-spacing: 0;
+      color: rgba(36, 43, 46, 1);
+      font-family: 'SemiBold Proxima Nova';
+    }
+  }
+
+  .see_brand_button {
+    cursor: pointer;
+    text-align: center;
+    color: $blue_color;
+    font-size: $fnt18;
+    //font-size: 16px;
+    font-weight: 600;
+    width: 278px;
+    height: 84px;
+    background: $transparent_white_backgrond;
+    box-shadow: 0px 3px 6px $grey_shadow;
+    border: 2px solid $blue_color;
+    border-radius: 6px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SemiBold Proxima Nova';
+
+    a {
+      color: #03a9f4;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+    padding-right: 79px;
+  }
+
+  .what_is_part {
+    //padding: 0 0 52px 79px;
+    display: flex;
+    color: $transparent_dark_grey;
+    max-width: 1440px;
+    //margin: auto;
+    display: grid;
+    //grid-template-columns: 476px calc(100% - 476px);
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+
+    .text_tag {
+      margin-top: 55px;
+      font-size: 20px;
+      letter-spacing: 0.9px;
+      //font-size: $fnt22;
+
+      span {
+        //font-size: $fnt24;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        color: black;
+      }
+    }
+
+    .see_brand_button {
+      cursor: pointer;
+      text-align: center;
+      color: $blue_color;
+      // font-size: $fnt18;
+      font-size: 16px;
+      font-weight: 600;
+      width: 278px;
+      height: 84px;
+      background: $transparent_white_backgrond;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border: 2px solid $blue_color;
+      border-radius: 6px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+
+  .inner {
+    padding: 0 0px 52px 0px;
+    margin: auto;
+
+    .text {
+      padding-left: 79px;
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  .text {
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+  .see_brand_button {
+    width: 90% !important;
+
+  }
+
+}
+
+@media (max-width: 425px) {
+  .inner {
+    padding: 0 0px 52px 0px;
+    margin: auto;
+
+  }
+
+  .text {
+    padding-right: 20px;
+    padding-left: 20px !important;
+
+    h1 {
+      font-size: 46px;
+      margin: 30px 0 18px 0;
+    }
+
+  }
+
+  .see_brand_button {
+    width: 100% !important;
+
+  }
+
+  .text_tag {
+    margin-top: 25px !important;
+  }
+
+  .description {
+    font-size: 18px !important;
+  }
+
+  .text_tag {
+    font-size: 18px !important;
+
+    span {
+      font-size: 18px !important;
+    }
+  }
+
+}

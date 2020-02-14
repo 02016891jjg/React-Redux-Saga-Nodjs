@@ -1,0 +1,39 @@
+.signup_header .header-signup:after {
+  content: '';
+  border: 5px solid;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-color: #03a9f4 transparent transparent;
+  left: 50%;
+  bottom: -9px;
+  transform: translate(-50%, 0);
+}
+
+.signup_header .header-signup {
+  position: relative;
+
+}
+
+.signup_header {
+  position: fixed;
+  z-index: 1;
+  //background: #FFF;
+
+  background-color: #eef2f6;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+input:-webkit-autofill {
+  background: white !important;
+}
+
+.signup_class {
+  font-family: 'SemiBold Proxima Nova';
+}
+
+.error_message{
+   color: #DB3236;
+   margin-right: 80px;
+}

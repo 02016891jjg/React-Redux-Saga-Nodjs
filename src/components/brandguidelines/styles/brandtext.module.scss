@@ -1,0 +1,112 @@
+@import 'assets/scss/main.scss';
+.brand_font_part_inner{
+  background: white;
+}
+.brand_font_part {
+  padding: 0px 79px 31px 79px;
+  background: white;
+  max-width: 1440px;
+  margin: auto;
+
+
+  .font_part {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    //margin-top: 37px;
+
+    .font {
+      display: flex;
+      padding-bottom: 31px;
+
+      .rect {
+        width: 141px;
+        height: 141px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 25px #0000001A;
+        border: 1px solid #12121233;
+        border-radius: 12px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .font_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .margin_adjust {
+          margin-top: 10px;
+          color: #242B2E;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+          font-family: 'Proxima Nova';
+        }
+
+
+      }
+    }
+
+  }
+
+  .small_font {
+    font-size: 24px;
+    //  font-family: sans-serif;
+  }
+
+  .big_font {
+    font-size: 62px;
+    //  font-family: sans-serif;
+  }
+
+  .medium_font {
+    font-size: 28px;
+    // font-family: sans-serif;
+  }
+
+  .brown_font {
+    font-size: 22px;
+    font-family: 'Proxima Nova';
+    line-height: 2;
+  }
+
+  .brown_font1 {
+    font-size: 14px;
+    font-family: 'Proxima Nova';
+    line-height: 2;
+  }
+  .brown_font2 {
+    font-size: 12px;
+    font-family: 'Proxima Nova';
+    line-height: 2;
+  }
+
+  .text_adjust {
+    margin-bottom: 15px;
+    font-family: 'ExtraBold Proxima Nova';
+    letter-spacing: 0.96px;
+    /* color: #242B2E; */
+    text-transform: capitalize;
+    /* opacity: 1; */
+    font-weight: 900;
+    font-size: 24px;
+
+  }
+}
+@media (max-width: 768px) {
+  .font {
+    padding-bottom: 20px;
+  }
+
+}
+
+  @media (max-width: 425px) {
+    .brand_font_part {
+      padding: 0px 20px 31px 20px;
+    }
+
+  }

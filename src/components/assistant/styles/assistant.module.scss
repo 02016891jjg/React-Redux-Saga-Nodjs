@@ -1,0 +1,152 @@
+@import 'assets/scss/main.scss';
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    width: 98%;
+    height: 84px;
+    background: #03A9F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 24px 12px;
+    color: white;
+    font-family: 'SemiBold Proxima Nova';
+    //margin:0 20px;
+    font-size: 18px;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  .button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    width: 98%;
+    height: 84px;
+    background: #1976D2 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 0px 10px;
+    color: white;
+    font-family: 'SemiBold Proxima Nova';
+    //margin:0 20px;
+    font-size: 18px;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.about_header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
+
+}
+
+.about_hdr {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about_us_page {
+  box-sizing: content-box;
+  //min-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background: #F6F8FA;
+
+  .selling_part{
+      width: 100%;
+      background: #F6F8FA;
+
+      p{
+        text-align: center;
+        font-family: 'Medium Proxima Nova';
+        font-size: 28px;
+        padding: 60px;
+        letter-spacing: -0.56px;
+        color: #242B2E;
+        opacity: 1;
+      }
+  }
+
+  .already_excited {
+    /* min-height: 327px; */
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 58px 79px 68px;
+
+    .text {
+      font-size: $fnt48;
+      letter-spacing: -0.96px;
+      font-weight: bold;
+      font-family: 'Proxima Nova';
+      padding-bottom: 46px;
+    }
+
+
+    div {
+      //display: inline-block;
+      //align-self: center;
+
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .already_excited {
+    padding: 48px 20px 44px !important;
+
+    .text {
+      font-size: 32px !important;
+      padding-bottom: 12px !important;
+    }
+
+  }
+
+  .button1,
+  .button2 {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+}
+
+.border_background {
+  background: white;
+
+  .border_margin {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    .border_content {
+      margin: 0 79px;
+      border-bottom: 1px solid #eef2f6;
+
+    }
+  }
+}

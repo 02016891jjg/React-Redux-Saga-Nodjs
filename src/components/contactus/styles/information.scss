@@ -1,0 +1,136 @@
+@import 'assets/scss/main.scss';
+
+.sendpart {
+  padding-left: 79px;
+  padding-top: 54px;
+
+  .contact_send_button {
+    margin-top: 18px;
+    width: 75%;
+    height: 72px;
+    background: #03a9f4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000d;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #ffffff;
+    opacity: 1;
+    outline: none;
+    border: none;
+    font-family: 'SemiBold Proxima Nova';
+    margin-bottom: 100px;
+
+  }
+
+  .success_message {
+    width: 75%;
+    padding: 20px;
+    color: white;
+    background: #bbe466;
+  }
+
+  
+
+   
+
+  .input_email_address {
+    margin-top: 15px;
+    width: 75%;
+    height: 62px;
+    background: #EEF2F6 0% 0% no-repeat padding-box;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:hover{
+      border: 1px solid #91A8BF !important;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+     }
+  }
+.error_message{
+
+  color:  #DB3236;
+  margin-top: 10px;
+}
+    .error_input_email_address{
+      margin-top: 15px;
+      width: 75%;
+      height: 62px;
+      background: #DB32360D 0% 0% no-repeat padding-box;
+      border: 1px solid #DB3236;
+      border-radius: 8px;
+      opacity: 1;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      outline: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      
+      &:hover{
+        border: 1px solid #91A8BF !important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+       }
+    }
+  
+
+  .enter_message_part {
+    margin-top: 18px;
+    .contact_message {
+      margin-top: 15px;
+      width: 75%;
+      height: 142px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #ebebeb;
+      border-radius: 6px;
+      opacity: 1;
+
+      .message_send {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        padding: 15px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        background: #EEF2F6 0% 0% no-repeat padding-box;
+        
+       &:hover{
+          border: 1px solid #91A8BF !important;   
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+}
+.email_address .error_point{
+  border: 1px solid red !important;
+ }
+@media (max-width: 425px) {
+  .sendpart .contact_send_button {
+    width: 100%;
+  }
+
+  .sendpart .email_address {
+    width: 100%;
+  }
+
+  .sendpart .contact_message {
+    width: 100% !important;
+  }
+
+  .sendpart .success_message {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sendpart {
+    padding-left: 0px !important;
+  }
+}

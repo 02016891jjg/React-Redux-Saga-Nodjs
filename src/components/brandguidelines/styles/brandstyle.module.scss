@@ -1,0 +1,188 @@
+@import 'assets/scss/main.scss';
+
+.what_is_part_inner {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.text {
+  display: inline-block;
+  width: 50%;
+  padding-left: 79px;
+  //min-width: 315px;
+
+  h1 {
+    margin: 50px 0 18px 0;
+    font-weight: bolder;
+    max-width: 100%;
+    font-size: 78px;
+    color: #242b2e;
+    letter-spacing: -1.56px;
+    font-family: 'ExtraBold Proxima Nova';
+    font-weight: 900;
+
+  }
+
+  .description {
+    width: 92%;
+    max-width: 889px;
+    font-size: 22px;
+    color: #242B2ECC;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    opacity: 1;
+    font-family: 'Proxima Nova';
+  }
+}
+
+.photos {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  //min-width: 680px;
+
+  .cards,
+  .background {
+    width: 100%;
+    background-image: url(/images/asset.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .mocup,
+  .photo {
+    position: absolute;
+    bottom: 0;
+    right: -148px;
+    width: 116%;
+  }
+}
+
+.what_is_part {
+  padding: 0px;
+  display: flex;
+  color: $transparent_dark_grey;
+  width: 100%;
+
+  .text_tag {
+    margin-top: 55px;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    //font-size: $fnt22;
+
+    span {
+      //font-size: $fnt24;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      color: black;
+    }
+  }
+
+  .see_brand_button {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 278px;
+    height: 74px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    background: #03A9F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 6px;
+    opacity: 1;
+    img {
+      width: 19px;
+      height: 19px;
+    }
+
+  }
+
+  .download_title {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .what_is_part {
+    flex-direction: column;
+
+    .text_tag {
+      padding-right: 79px;
+
+      span {
+        //font-size: $fnt24;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        color: black;
+      }
+    }
+  }
+
+  .text {
+    width: 100% !important;
+  }
+
+  .photos {
+    height: 500px;
+    width: 100% !important;
+
+  }
+
+  .cards,
+  .background {
+    img {
+      width: 100% !important;
+      height: max-content !important;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .text {
+
+    //padding:0 20px!important;
+    h1 {
+      font-size: 48px !important;
+    }
+
+  }
+
+}
+
+@media (max-width: 425px) {
+  .description {
+    font-size: 18px !important;
+  }
+
+  .text {
+    padding: 0 20px !important;
+
+    h1 {
+      margin: 30px 0 18px 0;
+    }
+  }
+
+  .see_brand_button {
+    width: 100% !important;
+  }
+
+}

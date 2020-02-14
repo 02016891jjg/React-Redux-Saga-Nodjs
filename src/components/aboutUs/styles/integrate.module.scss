@@ -1,0 +1,283 @@
+@import 'assets/scss/main.scss';
+
+.integrate_inner {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 495px calc(100% - 495px);
+  height: 100%;
+  padding: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+}
+
+.integrate_one_part {
+  margin: 12px;
+}
+
+.integrate_text {
+
+  padding-left: 79px;
+
+  p {
+    margin: 82px 0 18px 0;
+    width: 70%;
+    max-width: 100%;
+    font-size: 78px;
+    color: black;
+    line-height: 1;
+    letter-spacing: -1.56px;
+    font-family: 'ExtraBold Proxima Nova';
+  }
+
+  .description {
+    display: inline-block;
+    width: 40%;
+    font-size: $fnt22;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-family: 'Proxima Nova';
+    color: #242B2ECC;
+  }
+}
+
+.text {
+  //display: inline-block;
+
+  padding: 67px 17px 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-top: 67px;
+  height: 100%;
+  text-align: center;
+  font-family: 'Proxima Nova';
+  line-height: 1.3;
+  font-size: 24px;
+  letter-spacing: 0;
+
+  h1 {
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    max-width: 100%;
+    font-size: 78px;
+    color: black;
+    letter-spacing: -1.56px;
+    font-family: 'ExtraBold Proxima Nova';
+  }
+
+  .description {
+    display: inline-block;
+    width: 92%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    font-weight: 100;
+    line-height: 1.4;
+    //letter-spacing: -0.9px;
+    font-family: 'Proxima Nova';
+  }
+}
+
+.integrate_part {
+  background: transparent linear-gradient(125deg, $gradient_white1 0%, $gradient_white2 100%) 0% 0% no-repeat padding-box;
+
+  .platforms_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 67px 79px 0px 79px;
+    //padding-right: 14px;
+
+    .container {
+      //width: 300px;
+      //height: 311px;
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+    
+        height: 50px;
+      }
+
+      .description {
+        position: relative;
+
+        .background {
+          width: 100%;
+          height: 322px;
+          background: transparent linear-gradient(137deg, #026087 0%, #025E84 21%, #087CAD 100%) 0% 0% no-repeat padding-box;
+          border-radius: 40px 40px 0px 0px;
+          opacity: 0.1;
+          margin-left: 12px;
+        }
+
+        .text_container {
+          width: 100%;
+          height: 311px;
+          border-radius: 30px 30px 0px 0px;
+          font-size: 22px;
+          position: absolute;
+          bottom: 0;
+          justify-content: space-around;
+          display: flex;
+          flex-direction: column;
+          letter-spacing: 0;
+          color: #FFFFFF;
+          align-items: center;
+          text-align: left;
+          font-family: regular;
+
+          .link {
+            text-decoration: underline;
+            font-size: $fnt18;
+            color: $white_background;
+            font-family: 'SemiBold Proxima Nova';
+          }
+        }
+      }
+
+      .wp {
+        .background {
+          background: transparent linear-gradient(137deg, $gradient_wp1 0%, $gradient_wp2 21%, $gradient_wp3 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .text_container {
+          background: $gradient_wp1 0% 0% no-repeat padding-box;
+        }
+      }
+
+      .shopify {
+        .background {
+          background: transparent linear-gradient(140deg, $gradient_shopify1 0%, $gradient_shopify2 100%) 0% 0% no-repeat padding-box;
+          opacity: 0.2;
+        }
+
+        .text_container {
+          background: $gradient_shopify1 0% 0% no-repeat padding-box;
+        }
+      }
+
+      .youtube {
+        .background {
+          background: transparent linear-gradient(138deg, $gradient_youtube1 0%, $gradient_youtube2 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .text_container {
+          background: $gradient_youtube1 0% 0% no-repeat padding-box;
+        }
+      }
+
+      .tech_specs {
+        .background {
+          background: transparent linear-gradient(137deg, $gradient_tech_specs1 0%, $gradient_tech_specs2 100%) 0% 0% no-repeat padding-box;
+        }
+
+        .text_container {
+          background: $gradient_tech_specs1 0% 0% no-repeat padding-box;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+
+  .integrate_one_part {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    width: 100%;
+  }
+
+  .integrate_one_part {
+    margin-bottom: 60px;
+    text-align: center;
+
+    .container {
+      margin: auto;
+    }
+  }
+
+}
+
+@media (max-width: 566px) {
+  .integrate_text {
+    h1 {
+      font-size: 46px;
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+  .integrate_inner {
+    padding: 0 20px;
+  }
+
+  .integrate_text {
+    h1 {
+      font-size: 46px;
+      margin: 43px 0 18px 0;
+    }
+  }
+
+  .integrate_part {
+    .platforms_container {
+
+      .container {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .description {
+    font-size: 18px !important;
+  }
+
+}
+
+.container_text{
+  margin-bottom: 60px;
+  color: #03a9f4;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  max-width: 200px;
+  width: 200px;
+  margin-left: 18px;
+  transform: translateY(-16px);
+}
+
+.container_text_white{
+  margin-bottom: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  max-width: 200px;
+  width: 200px;
+  margin-left: 18px;
+}

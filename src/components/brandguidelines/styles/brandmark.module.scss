@@ -1,0 +1,61 @@
+@import 'assets/scss/main.scss';
+
+.brand_mark_part_inner {
+  background: #242B2E;
+}
+
+.brand_mark_part {
+
+  //padding: 67px 79px 67px 79px;
+  padding: 82px 79px 67px 79px;
+  background: #242B2E;
+  max-width: 1440px;
+  margin: auto;
+
+  .brand_mark_title {
+    display: inline-block;
+    //width: 60%;
+
+    h1 {
+      font-weight: bolder;
+      max-width: 100%;
+      color: white; // font-size: $fnt78;
+      font-size: 78px;
+      letter-spacing: -1.56px;
+      font-family: 'ExtraBold Proxima Nova';
+    }
+
+    .brand_mark_description {
+     
+      max-width: 889px;
+      font-size: 22px;
+      color: white;
+      width: 95%;
+      border-left: 3px solid white;
+      padding-left: 17px;
+      letter-spacing: 0;
+      line-height: 1.2;
+      opacity: 1;
+      font-family: 'Proxima Nova';
+
+    }
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  .brand_mark_part {
+    padding: 42px 20px 28px 20px;
+
+    .brand_mark_title {
+      h1 {
+        font-size: 48px;
+      }
+
+      .brand_mark_description {
+        font-size: 18px !important;
+      }
+    }
+  }
+}

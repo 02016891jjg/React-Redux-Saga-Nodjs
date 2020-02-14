@@ -1,0 +1,48 @@
+@import 'assets/scss/main.scss';
+
+.text {
+  padding-left: 79px;
+
+  p {
+    width: 68%;
+    font-size: 78px;
+    font-family: 'ExtraBold Proxima Nova';
+    letter-spacing: -1.56px;
+    color: rgba(36, 43, 46, 1);
+    opacity: 1;
+    line-height: normal;
+    padding-top: 82px;
+    padding-bottom: 18px;
+  }
+
+  .description {
+    display: inline-block;
+    width: 90%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    line-height: 1.2;
+    font-family: 'Medium Proxima Nova';
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .sendpart .contact_send_button {
+    width: 100%;
+  }
+
+  .text p {
+    width: 100%;
+  }
+
+  .text .description {
+    width: 100% !important;
+  }
+}

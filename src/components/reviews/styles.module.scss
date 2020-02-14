@@ -1,0 +1,39 @@
+@import 'assets/scss/main.scss';
+
+.review{
+  margin-top: 20px;
+  position: relative;
+  .review_info{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 41px;
+  }
+  .reviewName {
+  
+  }
+  .review_text{
+    width: 95%;
+    height:32px;
+    flex-direction: row;
+    .review_time{
+      padding-left: 0;
+      color: $light_grey;
+    }
+  
+    .edit_review{
+      float: right;
+      color: $gradnt_dark_blue2;
+    }
+   
+  }
+  .review_star{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: -19px;
+  }
+  .left_review{
+    padding-left: 41px;
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76.368" height="76.368" viewBox="0 0 76.368 76.368">
+  <g id="button-close" transform="translate(38.184) rotate(45)">
+    <circle id="base" cx="27" cy="27" r="27" fill="rgba(36,43,46,0.8)"/>
+    <path id="icon-close" d="M5467,14638v-5h-5a1,1,0,1,1,0-2h5v-5a1,1,0,1,1,2,0v5h5a1,1,0,1,1,0,2h-5v5a1,1,0,0,1-2,0Z" transform="translate(14658.997 -5441.001) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

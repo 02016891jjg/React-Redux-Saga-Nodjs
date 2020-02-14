@@ -1,0 +1,137 @@
+body {
+    font-family: avenir,sans-serif;
+  }
+  .video_wrapper {
+    width: 605px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #000;
+    top: 100px;
+  }
+  .video_wrapper_full {
+    padding-top: 430px;
+  }
+  
+  
+  .videoIframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .videoPoster {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-image: url(/images/hero.png);
+    background-size: cover;
+    border: none;
+     text-indent: -999em;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 800ms, height 0s;
+    -moz-transition: opacity 800ms, height 0s;
+    transition: opacity 800ms, height 0s;
+    -webkit-transition-delay: 0s, 0s;
+    -moz-transition-delay: 0s, 0s;
+    transition-delay: 0s, 0s;
+  }
+  .videoPoster:hover {
+    cursor: pointer;
+  }
+  .videoPoster:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -40px 0 0 -40px;
+
+    background: #fff;
+    border-radius: 100%;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  .videoPoster:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 2px;
+    border-left: 19px solid #000;
+    border-top: 15px solid transparent;
+    border-bottom: 16px solid transparent;
+    transition: border-color 300ms;
+    border-radius: 7px;
+     
+  }
+  .videoPoster:hover:before,  .videoPoster:focus:before {
+      border-color: #fff;
+  }
+  .videoPoster:hover:after, .videoPoster:focus:after {
+    border-left-color: #000;
+  }
+  .videoWrapperActive .videoPoster {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
+  .video-play-part .video-react-poster {
+    background-size: 101%!important;
+  }
+  .video-play-part-you {
+    position: absolute
+  }
+  .video-play-part-you .video-react-poster{
+    background-size: 132% 106%;
+    background-position: -122px 25px;
+  }
+
+
+  
+.video-react .video-react-video{
+  height:700px!important;
+  object-fit:none!important;
+  position: initial!important;
+  
+}
+
+.html5-video-container.video-stream.html5-main-video{
+    object-fit: cover!important;
+    height: 600px!important;
+    top: 0px!important;
+    left: 0px!important;
+    width: 100%;
+    display: block!important;
+    position: relative!important;
+}
+
+.ytp-unmute .ytp-popup .ytp-button .ytp-unmute-animated .ytp-unmute-shrink{
+
+  border: none!important;
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 50%!important;
+  display: flex;
+  align-items: center!important;
+  justify-content: center!important;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  background: white!important;
+  position: absolute;
+  outline: none!important;
+  z-index: 100;
+  
+}

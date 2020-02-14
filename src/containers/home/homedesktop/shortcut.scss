@@ -1,0 +1,65 @@
+@import 'assets/scss/main.scss';
+
+.item_row {
+  @include fullWidth(100%, left);
+  @include flex_btwn(flex, space-between);
+  margin-top: 0 !important;
+  align-items: center;
+  padding: 10px 27px;
+  cursor: pointer;
+
+  &:hover {
+    background: #eef2f6;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+  }
+
+  &.clicked {
+    opacity: 1;
+  }
+}
+
+.item_row_lft {
+  @include flex_align_center(flex, center);
+}
+
+.mobile_icn {
+  margin-left: 9px;
+  width: 35px;
+  height: 35px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.mobile_contnt {
+  h4 {
+    color: $dark_grey;
+    font-size: $fnt14;
+  }
+
+  p {
+    color: $dark_grey;
+    font-size: 10px;
+    opacity: 1;
+    margin-top: 3px;
+  }
+}
+
+.item_row_rgt button {
+  border: 1px solid $place_holder;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: $fnt12;
+  color: $dark_grey;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+.mobile_icn img {
+  max-width: 100%;
+  max-height: 100%;
+}
