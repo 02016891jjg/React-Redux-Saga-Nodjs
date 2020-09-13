@@ -14,7 +14,7 @@ export const GET_RELATED_PRODUCTS = '/product/relatedProducts'
 export const GET_VS_FOOTER_PRODUCTS = '/vsrandomcompare'
 export const GET_CATEGORIES_FILTER = '/FilterProducts'
 export const POST_REVIEW = '/putReview'
-
+export const EMULATOR_URL = '/emulator'
 export const GET_CB_FILTER_PRODUCTS = '/product/getFilterProducts'
 
 export const ADD_ITEM = 'ADD_ITEM'
@@ -25,3 +25,4 @@ export const RESET_ITEM = 'RESET_ITEM'
 
 export const API_URL = 'https://techspecs.io'
 // export const API_URL = "http://localhost:50000";
+//https://appetize.io/embed/demo_phq04c56jnvrkg0bn9w5ep4m9r?device=iphone8&scale=75&autoplay=false&orientation=portrait&deviceColor=white

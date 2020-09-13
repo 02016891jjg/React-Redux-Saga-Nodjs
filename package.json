@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@u-wave/react-youtube": "^0.7.0",
+    "axios": "^0.20.0",
     "clappr": "^0.3.12",
     "cross-fetch": "^3.0.4",
     "detect-browser": "^4.8.0",

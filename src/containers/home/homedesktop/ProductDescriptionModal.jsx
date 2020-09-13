@@ -1,6 +1,7 @@
 //@flow
 
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 import ModalSideBar from 'components/modalSidebar'
 import ModalHeader from 'components/modalHeader'
@@ -10,12 +11,18 @@ import ProductDescriptionTable from 'components/productDescriptionTable'
 import ProductVideos from 'components/productVideos'
 import ReviewContainer from 'components/reviewContainer'
 import CommentContainer from 'components/commentContainer'
-import { BASE_URL } from 'common/constants'
+import { BASE_URL,BACKEND_URL,EMULATOR_URL } from 'common/constants'
+import Iframe from './Iframe'
+import Modal from 'components/common/Modal'
+import $ from "jquery";
 import { WHITE_VS_ICN, SEARCH_IMG, CLOSE_IMG, ARROW_ICON, ICON_GREY_SEARCH } from 'common/images'
 import './styles.scss'
 import './hiddenoverflow.scss'
+
+
 import { Any } from 'index'
 var stringSimilarity = require('string-similarity');
+
 type SocialAppType = { socialName: string, className: string }
 
 type RelatedProductsType = { productName: string, version: string }
@@ -112,9 +119,12 @@ const ProductDescriptionModal = (props: Props) => {
     onChangeReviewIndex
   } = props
 
-
+  
   const [sidenav, setSideNav] = useState(0)
   const [activeIcon, setActiveIcon] = useState(0)
+  const [isModal,setIsModal] = useState(false)
+  const [frame,setFrame] = useState(null)
+  // const [contentRef, setContentRef] = useState(null)
   const versiondetail = typeof versionDetailState.versionDetailState.result !== "undefined" ? versionDetailState.versionDetailState.result.specification : {};
   console.log(versiondetail)
   const images = typeof productDetailItem.smartPhoneDetails.result !== "undefined" ? productDetailItem.smartPhoneDetails.result.images : [];
@@ -124,10 +134,24 @@ const ProductDescriptionModal = (props: Props) => {
   const name = typeof productDetailItem.smartPhoneDetails.result !== "undefined" ? productDetailItem.smartPhoneDetails.result.name : "";
   const prduct_id = typeof productDetailItem.smartPhoneDetails.result !== "undefined" ? productDetailItem.smartPhoneDetails.result.product_id : "";
   // convertToversionDetail1(versions, specfications)
-  
+  // useEffect(()=>{
+  //     $('#project_iframe').on(function(){
+  //        $("#project_frame").contents().find('frame:first').attr('title', 'Table of Contents');
+  //     });
+    
+  // },[isModal])
   const callbackFunction = (data = 0) => {
     setSideNav(data)
     props.callbackHome(data)
+  }
+
+  const setModal = () =>{
+     axios('https://admin.techspecs.io/api/getEmulator')
+     .then(res=>{
+       console.log('html',res.data)
+       setFrame(res.data)
+     })
+     setIsModal(true)
   }
 
   const sideNavClick = i => {
@@ -135,6 +159,7 @@ const ProductDescriptionModal = (props: Props) => {
     setSideNav(i)
 
   }
+  
   const getAttributeByName = (value) => {
     var check=false;
     var id=""
@@ -259,7 +284,6 @@ const ProductDescriptionModal = (props: Props) => {
                 <input type="text" className="searchTerm"style={{textTransform:'capitalize'}} placeholder="Find a Spec..." onChange={(e) => getAttributeByName(e.target.value)} />
                 <img className="close_size" src={CLOSE_IMG} />
               </div>
-
               <ProductDescriptionTable
                 onProductColorSelect={onProductColorSelect}
                 paneList={specfications}
@@ -269,6 +293,14 @@ const ProductDescriptionModal = (props: Props) => {
                 isKeyAspectVisible={isKeyAspectVisible}
                 onHandleScroll={onHandleScroll}
               />
+            </div>
+            <div className={isDescModalVisible ? "plus_toggle_t plus_toggle_fixed_t" : "plus_toggle_t"} onClick={()=>setModal()}>
+             
+                <span>
+                  <i className="fa fa-eye" aria-hidden="true"></i>
+                </span>
+            
+               <p style={{fontSize:18,fontWeight:'bold'}}>TRY</p>
             </div>
             <div className={isDescModalVisible ? "plus_toggle plus_toggle_fixed" : "plus_toggle"} onClick={onVsItemClick}>
               <Link to="">
@@ -332,9 +364,15 @@ const ProductDescriptionModal = (props: Props) => {
             }
           </div>
         )
-
       }
-
+        <Modal isOpen={isModal} className="modal_watch_video" classShow="show">
+             {/* <iframe id="project_iframe" name="project_frame" src="https://appetize.io/embed/demo_phq04c56jnvrkg0bn9w5ep4m9r?device=iphone8&scale=75&autoplay=false&orientation=portrait&deviceColor=white" width="500px" height="700px" frameborder="0" scrolling="no"></iframe> */}
+              {/* <div id="project_frame">
+                
+              </div> */}
+             <Iframe source={frame}/>
+             <i className="fa fa-close" style={{position:'absolute',top:0,color:'white',fontSize:20}}aria-hidden="true" onClick={()=>setIsModal(false)}></i>
+        </Modal>
     </div>
   )
 }
